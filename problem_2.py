@@ -39,3 +39,4 @@ def find_files(suffix, path, files=[]):
 print(find_files('.', 'testdir'))
 print(find_files('.', ''))
 print(find_files('.', 'testdir/subdir1'))
+print(find_files('.', 'testdir', ['t1.c']))

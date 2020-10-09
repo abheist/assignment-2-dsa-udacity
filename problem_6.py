@@ -107,3 +107,34 @@ for i in element_2:
 
 print(union(linked_list_3, linked_list_4))
 print(intersection(linked_list_3, linked_list_4))
+
+
+linked_list_5 = LinkedList()
+linked_list_6 = LinkedList()
+
+element_1 = []
+element_2 = []
+
+for i in element_1:
+    linked_list_5.append(i)
+
+for i in element_2:
+    linked_list_6.append(i)
+
+print(union(linked_list_5, linked_list_6))
+print(intersection(linked_list_5, linked_list_6))
+
+linked_list_7 = LinkedList()
+linked_list_8 = LinkedList()
+
+element_1 = [0, 1]
+element_2 = [0, 1]
+
+for i in element_1:
+    linked_list_7.append(i)
+
+for i in element_2:
+    linked_list_8.append(i)
+
+print(union(linked_list_7, linked_list_8))
+print(intersection(linked_list_7, linked_list_8))
