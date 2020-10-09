@@ -1,4 +1,5 @@
-Create blocks with the help of LinkedList. And attach a new block on the tail of the node with the time complexity of O(1) as shown in the problem statement.
+Create blocks with the help of LinkedList. And attach a new block on the tail of the node. While creating a block, we are creating a hash for the previous node.
+and then attacing a new node to the previous hash node address.
 
 Time complexity: O(1)
 Space complexity: O(n), i.e.: Total space occupied by the blockchain.
