@@ -4,6 +4,9 @@ from collections import deque
 class LRU_Cache(object):
 
     def __init__(self, capacity):
+        if capacity <= 0:
+            print("Capacity should not be less or equal to zero")
+            return None
         self.capacity = capacity
         self.cache = {}
         self.key_orders = deque()
@@ -20,6 +23,8 @@ class LRU_Cache(object):
         self.cache[key] = value
 
 
+our_cache0 = LRU_Cache(-2)  # return None and print message
+our_cache0 = LRU_Cache(0)  # return None and print message
 our_cache = LRU_Cache(5)
 
 our_cache.set(1, 1)

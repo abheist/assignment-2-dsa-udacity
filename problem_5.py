@@ -24,13 +24,13 @@ class LinkedList:
         self.head = None
         self.last = None
 
-    def append(self, timestamp, data):
+    def append(self, data):
         if not self.head:
-            self.head = Block(timestamp, data, 0)
+            self.head = Block(get_greenwich_time(), data, 0)
             self.last = self.head
         else:
             temporary = self.last
-            self.last = Block(timestamp, data, temporary)
+            self.last = Block(get_greenwich_time(), data, temporary)
             self.last.previous_hash = temporary
 
 
@@ -40,9 +40,21 @@ def get_greenwich_time():
 
 
 temp = LinkedList()
-temp.append(get_greenwich_time(),
-            "To the well-organized mind, death is but the next great adventure!")
-temp.append(get_greenwich_time(), "Dobby is free.")
-
+temp.append("To the well-organized mind, death is but the next great adventure!")
+temp.append("Dobby is free.")
 print(temp.last.data)
 print(temp.last.previous_hash.data)
+
+
+temp1 = LinkedList()
+temp1.append("")
+temp1.append("Dobby is free.")
+print(temp1.last.data)
+print(temp1.last.previous_hash.data)
+
+
+temp2 = LinkedList()
+temp2.append("")
+temp2.append("")
+print(temp2.last.data)
+print(temp2.last.previous_hash.data)

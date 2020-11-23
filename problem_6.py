@@ -138,3 +138,18 @@ for i in element_2:
 
 print(union(linked_list_7, linked_list_8))
 print(intersection(linked_list_7, linked_list_8))
+
+linked_list_9 = LinkedList()
+linked_list_10 = LinkedList()
+
+element_1 = []
+element_2 = [0, 1]
+
+for i in element_1:
+    linked_list_9.append(i)
+
+for i in element_2:
+    linked_list_10.append(i)
+
+print(union(linked_list_9, linked_list_10))
+print(intersection(linked_list_9, linked_list_10))
